@@ -1,6 +1,6 @@
-words=0
-with open("text.txt", "r",encoding= "utf-8") as file:
-    for line in file:
-        w=line.split()
-        words+=len(w)
-print("количество слов в файле ", words)
+words=0#создаем переменную и присваиваем ей значение 0
+with open("text.txt", "r",encoding= "utf-8") as file:#открытие файла для чтения
+    for line in file:#с помощью цикла for проходим по каждой строчке из файла
+        w=line.split()#используем split() для разделения строки на слова
+        words+=len(w)#увеличиваем значение переменной words на количество слов в строке
+print("количество слов в файле ", words)# вывод количество слов в файле на консоль
